@@ -4,7 +4,7 @@ from .virtual import experiment, stimulus, fuse
 schema = dj.schema("pipeline_bridge_dynamic")
 
 
-# -------------------------- Data Processing Specification --------------------------
+# -------------------------- Data Specification --------------------------
 
 
 @schema
