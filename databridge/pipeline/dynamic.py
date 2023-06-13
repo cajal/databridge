@@ -70,7 +70,7 @@ class TrialVideo(dj.Manual):
     -> stimulus.Trial
     -> VideoSpec
     ---
-    video                   : longblob      # [frames, height, width, channels]
+    video                   : longblob          # [frames, height, width, channels]
     """
 
 
@@ -80,7 +80,7 @@ class TrialPerspective(dj.Manual):
     -> stimulus.Trial
     -> PerspectiveSpec
     ---
-    perspective             : longblob      # [frames, features]
+    perspective             : longblob          # [frames, features]
     """
 
 
@@ -90,7 +90,7 @@ class TrialModulation(dj.Manual):
     -> stimulus.Trial
     -> ModulationSpec
     ---
-    modulation              : longblob      # [frames, features]
+    modulation              : longblob          # [frames, features]
     """
 
 
@@ -100,7 +100,7 @@ class TrialResponse(dj.Manual):
     -> stimulus.Trial
     -> ResponseSpec
     ---
-    response                : longblob      # [frames, units]
+    response                : longblob          # [frames, units]
     """
 
 
