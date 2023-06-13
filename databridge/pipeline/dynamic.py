@@ -139,4 +139,7 @@ class ScanBridge(dj.Manual):
     -> ModulationSpec
     -> ResponseSpec
     -> TierSpec
+    ---
+    trials                  : int unsigned      # number of trials
+    units                   : int unsigned      # number of units
     """
