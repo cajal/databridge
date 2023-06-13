@@ -4,7 +4,7 @@ from .virtual import experiment, stimulus, fuse
 schema = dj.schema("pipeline_bridge")
 
 
-# -------------------------- Data Specification --------------------------
+# -------------------------- Data Preprocessing Specification --------------------------
 
 
 @schema
@@ -61,11 +61,11 @@ class TierSpec(dj.Lookup):
     """
 
 
-# -------------------------- Trial Data --------------------------
+# -------------------------- Preprocessed Data --------------------------
 
 
 @schema
-class TrialVideo(dj.Manual):
+class Video(dj.Manual):
     definition = """
     -> stimulus.Condition
     -> VideoSpec
@@ -75,7 +75,7 @@ class TrialVideo(dj.Manual):
 
 
 @schema
-class TrialPerspective(dj.Manual):
+class Perspective(dj.Manual):
     definition = """
     -> stimulus.Trial
     -> PerspectiveSpec
@@ -85,7 +85,7 @@ class TrialPerspective(dj.Manual):
 
 
 @schema
-class TrialModulation(dj.Manual):
+class Modulation(dj.Manual):
     definition = """
     -> stimulus.Trial
     -> ModulationSpec
@@ -95,7 +95,7 @@ class TrialModulation(dj.Manual):
 
 
 @schema
-class TrialResponse(dj.Manual):
+class Response(dj.Manual):
     definition = """
     -> stimulus.Trial
     -> ResponseSpec
