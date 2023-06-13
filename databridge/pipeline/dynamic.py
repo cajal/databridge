@@ -67,7 +67,7 @@ class TierSpec(dj.Lookup):
 @schema
 class TrialVideo(dj.Manual):
     definition = """
-    -> stimulus.Trial
+    -> stimulus.Condition
     -> VideoSpec
     ---
     video                   : longblob          # [frames, height, width, channels]
