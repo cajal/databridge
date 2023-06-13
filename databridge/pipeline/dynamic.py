@@ -118,7 +118,7 @@ class TrialTier(dj.Manual):
 
 
 @schema
-class ResponseUnit(dj.Manual):
+class UnitResponse(dj.Manual):
     definition = """
     -> fuse.ScanSet.Unit
     -> ResponseSpec
