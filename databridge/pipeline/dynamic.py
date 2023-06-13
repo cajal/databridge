@@ -4,7 +4,7 @@ from .virtual import experiment, stimulus, fuse
 schema = dj.schema("pipeline_bridge_dynamic")
 
 
-# -------------------------- Data Preprocessing Specification --------------------------
+# -------------------------- Data Processing Specification --------------------------
 
 
 @schema
@@ -61,7 +61,7 @@ class TierSpec(dj.Lookup):
     """
 
 
-# -------------------------- Preprocessed Data --------------------------
+# -------------------------- Processed Data --------------------------
 
 
 @schema
